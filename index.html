@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 (Coronavirus 2019)</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/covid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Festive&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Start Nav -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">C<img src="imgs/TitleIcon.png" alt="">VID19</a>
+          <button onclick="closeIcon()" class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse pt-2" id="main">
+            <div class="close-icon">
+              <i onclick="closeAria()" class="fa-regular fa-circle-xmark"></i>
+            </div>
+            <div class="collapse-parent d-flex">
+              <ul class="navbar-nav ms-auto justify-content-evenly mb-2 mb-lg-0">
+                <li class="nav-item p-lg-3">
+                  <a class="nav-link home-link" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item p-3">
+                  <a class="nav-link" href="#">About Corona</a>
+                </li>
+                <li class="nav-item p-3">
+                  <a class="nav-link" href="#">Symptoms</a>
+                </li>
+                <li class="nav-item p-3">
+                  <a class="nav-link" href="#">Prevention</a>
+                </li>
+                <li class="nav-item p-3">
+                  <a class="nav-link" href="#">Treatment</a>
+                </li>
+                <li class="nav-item p-3">
+                  <a class="nav-link" href="#">FAQ</a>
+                </li>
+                <li class="nav-item p-3">
+                  <a class="nav-link news-link" href="#">News</a>
+                </li>
+                <li class="nav-item ">
+                  <div class="btn btn-primary rounded-pill main-btn text-light ps-3 pe-3  ms-5 mt-3">Do & Don't</div>
+
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- End Nav -->
+
+      <!-- Start Header -->
+      <div class="header p-5 m-2 ms-5">
+        <div class="container text-center">
+          <div class="row d-flex flex-md-row-reverse">
+            <div class="col-lg-6 col-sm-12">
+              <div class="heading d-flex w-100">
+                <div>
+                  <h1>CORONA</h1>
+                </div>
+               <div>
+                <p><span class="covid">Covid-19</span></p>
+                <p><span class="virus">VIRUS</span></p>
+               </div>
+              </div>
+              <div class="text w-100">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eos aliquam sed. Delectus nihil facilis accusantium rem quasi in beatae, commodi cumque totam, explicabo expedita, corporis non fuga sunt eos.
+                </p>
+              </div>
+              <div class="header-content">
+                <div class="buttons d-flex justify-content-evenly m-5 row">
+                  <a href="#" class="btn btn-primary rounded-pill ps-3 fw-bold col-md-6 col-sm-12">How To Protect <i class="fa-solid fa-shield-halved text-white ps-2 pe-2"></i></a>
+                  <a href="#" class="btn btn-light rounded-pill text-primary ps-3 fw-bold col-md-6 col-sm-12">About covid-19 <i class="fa-solid fa-arrow-right ps-2 pe-2"></i></a>
+                </div>
+                <div class="row info d-flex justify-content-between w-100">
+                  <div class="col-lg-3 col-md-12 col1">
+                    <p class="lh-1">WORLDWIDECASES</p>
+                    <h2 class="lh-1">8,949,671</h2>
+                  </div>
+                  <div class="col-lg-3 col1 col-md-12">
+                    <p class="lh-1">DEATHS</p>
+                    <h2 class="lh-1">467,423</h2>
+                  </div>
+                  <div class="col-lg-3 col1 col-md-12">
+                    <p class="lh-1">RECOVERD</p>
+                    <h2 class="lh-1">4,556,091</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="text mt-5 ms-0 text-start">
+                <p>*Last updated: Jan 21, 2022, 09.24 AM AMERICA/CHCAGHO</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <img src="imgs/header-a.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <!-- End Header -->
+
+      <!-- Start About -->
+      <div class="about pt-5 pb-5" id="about">
+        <div class="container">
+          <div class="row d-flex justify-content-between">
+            <div class="col-lg-6 text">
+              <h6>ABOUT THE DISEASE</h6>
+              <h1>CORONAVIRUS (COVID-19)</h1>
+              <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>Dignissimos perspiciatis doloremque, quisquam quasi delectus asperiores distinctio ipsa dolore tempora, modi nobis voluptates amet eveniet qui? Voluptates id reprehenderit nihil veniam.</p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim sapiente nemo magni modi ea dolorem, rem dolorum, nulla vero vitae reiciendis quae ipsum, consequuntur sed consequatur debitis expedita. Earum, odit?</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius vitae, magni fugiat eligendi, quia fuga asperiores perferendis minima aperiam at provident! Dolorum officia vel porro ea reprehenderit asperiores quasi rerum!</p>
+            </div>
+            <div class="col-lg-4">
+              <table class="shadow p-3 mb-5 bg-white rounded table" >
+                <tr>
+                  <th>
+                    <h4 class="ms-3">What we need to know</h4>
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="btn btn-light text-bg-light text-primary">How CORONAVIRUS is spread <i class="fa-solid fa-arrow-right ps-5 pe-2"></i></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="btn btn-light text-bg-light text-primary">How CORONAVIRUS is spread <i class="fa-solid fa-arrow-right ps-5 pe-2"></i></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="btn btn-light text-bg-light text-primary">How CORONAVIRUS is spread <i class="fa-solid fa-arrow-right ps-5 pe-2"></i></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="btn btn-light text-bg-light text-primary">How CORONAVIRUS is spread <i class="fa-solid fa-arrow-right ps-5 pe-2"></i></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="btn btn-light text-bg-light text-primary">How CORONAVIRUS is spread <i class="fa-solid fa-arrow-right ps-5 pe-2"></i></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="btn btn-light text-bg-light text-primary">How CORONAVIRUS is spread <i class="fa-solid fa-arrow-right ps-5 pe-2"></i></a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End About -->
+
+      <!-- Start disease -->
+      <div class="disease pt-5 pb-5 mt-5">
+        <div class="container text-center">
+          <h5 class="text-uppercase">how CORONAVIRUS is spread</h5>
+          <h1 class="text-uppercase">transmission of Covid-19</h1>
+          <p class="pt-3 pb-5 w-50 m-auto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga corporis natus quia magni pariatur dolores repellat explicabo at vel voluptatum iure, a reiciendis enim.</p>
+        
+        <div class="cards row gap-2 d-flex justify-content-center pb-5">
+          <div class="card col-lg-3" >
+            <img src="imgs/spread-a.png" class="card-img-top" alt="...">
+            <div class="line"></div>
+            <div class="card-body">
+              <h5 class="card-title">Lorem ipsum dolor sit amet consectetur</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure aliquid, architecto enim repudiandae perferendis cupiditate fugiat autem, odit adipisci quia impedit omni</p>
+            </div>
+          </div>
+          <div class="card col-lg-3" >
+            <img src="imgs/spread-b.png" class="card-img-top" alt="...">
+            <div class="line"></div>
+            <div class="card-body">
+              <h5 class="card-title">Lorem ipsum dolor sit amet consectetur</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel possimus accusamus non itaque est iure debitis atque laborum quibusdam repellendus culpa aliquid cumque ea, </p>
+            </div>
+          </div>
+          <div class="card col-lg-3" >
+            <img src="imgs/spread-c.png" class="card-img-top" alt="...">
+            <div class="line"></div>
+            <div class="card-body">
+              <h5 class="card-title">Lorem ipsum dolor sit amet consectetur</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique consequatur expedita mollitia cupiditate et optio harum? Harum labore a praesentium temporibus minima </p>
+            </div>
+          </div>
+        </div>
+        <div class="pt-5 pb-5">
+          <a href="" class="btn btn-primary rounded-pill pe-4 fw-bold"><i class="fa-regular fa-circle-question ps-2 pe-2 "></i> Have question about spreading?</a>
+        </div>
+      </div>
+      </div>
+      
+      <!-- End disease -->
+      <!-- Start symptoms -->
+      <div class="symptoms pt-5 mt-5 pb-5 mb-5">
+        <div class="container text-center">
+          <h5 class="text-uppercase">What are the symptoms of Covid-19?</h5>
+          <h1 class="text-uppercase">symptoms of CORONAVIRUS</h1>
+          <p class="pt-3 pb-5 w-50 m-auto">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+             Fuga corporis natus quia magni pariatur dolores repellat explicabo 
+             at vel voluptatum iure, a reiciendis enim.
+            </p>
+          <div class="cards row gap-3 d-flex justify-content-center pb-5 mt-5 pt-5 ps-0 pe-0 ms-0 me-0">
+            <div class="card col-lg-3 d-flex border-0 shadow" >
+              <img src="imgs/symptom-a.png" class="img-fluid rounded-pill  shadow  position-relative pb-0 mb-0 " alt="...">
+              <div class="card-body text-start pt-0 mt-0 ">
+                <h5 class="card-title pt-0 mt-0">Lorem ipsum</h5>
+                <p class="card-text">
+                  <span>Lorem, ipsum</span> dolor sit amet consectetur adipisicing elit.
+                   Similique consequatur expedita mollitia cupiditate et optio harum? Harum 
+                   labore a praesentium temporibus minima 
+                  </p>
+              </div>
+            </div>
+            <div class="card col-lg-3 d-flex border-0 shadow" >
+              <img src="imgs/symptom-b.png" class="img-fluid rounded-pill  shadow  position-relative pb-0 mb-0 " alt="...">
+              <div class="card-body text-start pt-0 mt-0">
+                <h5 class="card-title pt-0 mt-0">Lorem ipsum</h5>
+                <p class="card-text"><span>Lorem, ipsum</span> dolor sit amet
+                   consectetur adipisicing elit. Similique consequatur expedita 
+                   mollitia cupiditate et optio harum? Harum labore a praesentium temporibus minima 
+                </p>
+              </div>
+            </div>
+            <div class="card col-lg-3 d-flex border-0 shadow" >
+              <img src="imgs/symptom-c.png" class="img-fluid rounded-pill  shadow  position-relative pb-0 mb-0 " alt="...">
+              <div class="card-body text-start pt-0 mt-0">
+                <h5 class="card-title pt-0 mt-0">Lorem ipsum</h5>
+                <p class="card-text">
+                  <span>Lorem, ipsum</span> dolor sit amet consectetur adipisicing elit.
+                   Similique consequatur expedita mollitia cupiditate et optio harum?
+                    Harum labore a praesentium temporibus minima 
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="alert gap-1 row text-center d-flex justify-content-center mt-5 pt-3 mb-5 pb-5">
+            <div class="col-lg-6 d-flex text">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <p>
+                <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
+                 Hic esse, neque repudiandae dolor nulla odit animi expedita dolorum deserunt nam fuga adipisci
+                  quibusdam, delectus dolores quis vel maiores, sunt soluta.
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <a href="" class="btn btn-primary rounded-pill pe-3 fw-bold"><i class="fa-regular fa-circle-question ps-2 pe-2 "></i> Have a question? Find answer</a>
+            </div>
+          </div>
+      </div>
+      </div>
+
+
+      <!-- End symptoms -->
+
+      <!-- Start prevention -->
+      <div class="prevention pt-5 mt-5">
+        <div class="container text-center">
+          <h5 class="text-uppercase">how to protect yourself?</h5>
+          <h1 class="text-uppercase">prevention & advice</h1>
+          <p class="pt-3 pb-5 w-50 m-auto">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+             Fuga corporis natus quia magni pariatur dolores repellat explicabo at vel voluptatum iure,
+              a reiciendis enim.
+            </p>
+          <div class="row">
+            <div class="col-lg-3 text-center">
+              <img src="imgs/advice-a.png" class="img-fluid rounded-pill h-25 mb-4 shadow" alt="">
+              <h5>Lorem ipsum dolor sit amet</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, architecto.
+                 Ad cupiditate obcaecati ex iste quidem nulla corporis architecto beatae aperiam optio ab
+                quas non reprehenderit est dolore, dolorum maiores!
+              </p>
+            </div>
+            <div class="col-lg-3 text-center">
+              <img src="imgs/advice-b.png" class="img-fluid rounded-pill h-25 mb-4 shadow" alt="">
+              <h5>Lorem ipsum dolor sit amet</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, architecto.
+                 Ad cupiditate obcaecati ex iste quidem nulla corporis architecto beatae aperiam optio ab
+                quas non reprehenderit est dolore, dolorum maiores!
+              </p>
+            </div>
+            <div class="col-lg-3 text-center">
+              <img src="imgs/advice-c.png" class="img-fluid rounded-pill h-25 mb-4 shadow" alt="">
+              <h5>Lorem ipsum dolor sit amet</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, architecto.
+                 Ad cupiditate obcaecati ex iste quidem nulla corporis architecto beatae aperiam optio ab
+                quas non reprehenderit est dolore, dolorum maiores!
+              </p>
+            </div>
+            <div class="col-lg-3 text-center">
+              <img src="imgs/advice-d.png" class="img-fluid rounded-pill h-25 mb-4 shadow" alt="">
+              <h5>Lorem ipsum dolor sit amet</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, architecto.
+                 Ad cupiditate obcaecati ex iste quidem nulla corporis architecto beatae aperiam optio ab
+                quas non reprehenderit est dolore, dolorum maiores!
+              </p>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center pb-5">
+            <div class="col-lg-4">
+              <a href="" class="btn btn-primary rounded-pill pe-3 fw-bold"> Check how you wash hand <i class="fa-solid fa-arrow-right ps-2 pe-2"></i></a>
+            </div>
+            <div class="col-lg-4">
+              <a href="" class="btn btn-light text-primary rounded-pill pe-3 fw-bold">Q&A on Coronavirus <i class="fa-solid fa-arrow-right ps-2 pe-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End prevention -->
+      <!-- Start steps -->
+      <div class="steps pt-5 mt-5 pb-5">
+        <div class="container bg-white p-5">
+          <div class="row">
+            <div class="col-lg-8">
+              <h2 class="text-start ps-4">Take steps to protect others</h2>
+              <br>
+              <p>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+                Perspiciatis incidunt dicta numquam exercitationem magnam non sunt adipisci.
+              </p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+                Perspiciatis incidunt dicta numquam exercitationem magnam non sunt adipisci.
+              </p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+                Perspiciatis incidunt dicta numquam exercitationem magnam non sunt adipisci.
+              </p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+                Perspiciatis incidunt dicta numquam exercitationem magnam non sunt adipisci.
+              </p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+                Perspiciatis incidunt dicta numquam exercitationem magnam non sunt adipisci.
+              </p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+                Perspiciatis incidunt dicta numquam exercitationem magnam non sunt adipisci.
+              </p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+                Perspiciatis incidunt dicta numquam exercitationem magnam non sunt adipisci.
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <img src="imgs/steps.png" class="img-fluid h-75" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End steps -->
+      <!-- Start follow -->
+      <div class="follow pt-5 pb-5">
+        <div class="container">
+          <h3>Follow steps to wash hands</h3>
+          <a href="" class="btn btn-light text-primary rounded-pill pe-3 fw-bold">Why do I need to wash hand <i class="fa-solid fa-arrow-right ps-2 pe-2"></i></a>
+          <div class="row pt-5 mt-3">
+            <div class="col-lg-2">
+              <img src="imgs/hand-a.png" class="img-fluid rounded-pill shadow h-50" alt="">
+              <p class="text-capitalize pt-3 text-center fw-bold m-auto w-50">soop on hand</p>
+            </div>
+            <div class="col-lg-2">
+              <img src="imgs/hand-b.png" class="img-fluid rounded-pill shadow h-50" alt="">
+              <p class="text-capitalize pt-3 text-center fw-bold m-auto w-50">plam on plam</p>
+            </div>
+            <div class="col-lg-2">
+              <img src="imgs/hand-c.png" class="img-fluid rounded-pill shadow h-50" alt="">
+              <p class="text-capitalize pt-3 text-center fw-bold m-auto w-50">between fingers</p>
+            </div>
+            <div class="col-lg-2">
+              <img src="imgs/hand-d.png" class="img-fluid rounded-pill shadow h-50" alt="">
+              <p class="text-capitalize pt-3 text-center fw-bold m-auto w-50">back to hands</p>
+            </div>
+            <div class="col-lg-2">
+              <img src="imgs/hand-e.png" class="img-fluid rounded-pill shadow h-50" alt="">
+              <p class="text-capitalize pt-3 text-center fw-bold m-auto w-75">clean with water</p>
+            </div>
+            <div class="col-lg-2 col-md-6">
+              <img src="imgs/hand-f.png" class="img-fluid rounded-pill shadow h-50" alt="">
+              <p class="text-capitalize pt-3 text-center fw-bold m-auto w-50">focus on wrist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End follow -->
+
+      <!-- Start treatment -->
+      <div class="treatment mt-5 pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 text-start mt-5 mb-5  p-5 pt-0 ">
+              <h5 class="text-uppercase lh-base">be carefull & stay safe</h5>
+            <h3 class="text-uppercase fw-bold text-white">treatment for Coronavirus</h3>
+            <p class=" m-auto text-white-50">
+              <span class="text-white fw-bold">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+             Fuga corporis natus quia magni pariatur dolores repellat explicabo at vel voluptatum iure,
+              a reiciendis enim.
+            </p>
+            </div>
+            <div class="col-lg-4 box text-white mt-5 p-4 mb-5">
+              <h5>Self Care</h5>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                 Perferendis, corporis laudantium eum reiciendis corrupti enim nemo,
+                  sunt quaerat necessitatibus maxime sint omnis labore quod
+              </p>
+              <p>asdasdad</p>
+              <p>asdasdad</p>
+              <p>asdasdad</p>
+              <p>asdasdad</p>
+              <h5>Medical Treatments</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur,
+                 adipisicing elit. Nesciunt, autem accusamus,
+                  veritatis magni ipsum, iure aut ipsa repudiandae quibusdam 
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End treatment -->
+
+      <!--  Start Do & Don't -->
+      <div class="do pt-5 pb-5 mt-5">
+        <div class="container text-center">
+          <h5 class="text-uppercase text-primary">do's & don'ts</h5>
+          <h2 class="text-uppercase fw-bold">protect yourself</h2>
+          <p class="pt-3 pb-5 w-75 text-black m-auto">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+             Fuga corporis natus quia magni pariatur dolores repellat explicabo at vel voluptatum iure,
+              a reiciendis enim.
+            </p>
+            <div class="row">
+              <div class="big-box col-lg-4 col-md-6">
+                <div class="box d-flex align-items-lg-center">
+                  <div class="image  d-flex align-items-center ">
+                    <p class="">Lorem ipsum dolor sit</p>
+                    <i class="fa-solid fa-xmark "></i>
+                   <img src="imgs/donts-a.png" class="img-fluid rounded-pill " alt="">
+                  </div>
+                </div>
+                <div class="box d-flex  align-items-lg-center ">
+                  <div class="image  d-flex align-items-center" >
+                    <p class="">Lorem ipsum dolor sit</p>
+                    <i class="fa-solid fa-xmark "></i>
+                  <img src="imgs/donts-b.png" class="img-fluid rounded-pill" alt="">
+                  </div>
+                </div>
+                <div class="box d-flex align-items-lg-center">
+                  <div class="image d-flex align-items-center">
+                    <p class="">Lorem ipsum dolor sit</p>
+                    <i class="fa-solid fa-xmark "></i>
+                  <img src="imgs/donts-c.png" class="img-fluid rounded-pill " alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12 protect m-sm-5">
+                <img src="imgs/protect.png" class="img-fluid" alt="">
+              </div>
+              <div class="big-box col-lg-4 col-md-6 box">
+                <div class="box d-flex align-items-lg-center">
+                  <div class="image d-flex align-items-center">
+                    <i class="fa-solid fa-check "></i>
+                  <img src="imgs/dos-a.png" class="img-fluid rounded-pill" alt="">
+                  <p class="">Lorem ipsum dolor sit</p>
+                  </div>
+                </div>
+                <div class="d-flex  align-items-lg-center ">
+                  <div class="image d-flex align-items-center">
+                    <i class="fa-solid fa-check "></i>
+                  <img src="imgs/dos-b.png" class="img-fluid rounded-pill" alt="">
+                  <p class="">Lorem ipsum dolor sit</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-lg-center">
+                  <div class="image d-flex align-items-center">
+                    <i class="fa-solid fa-check "></i>
+                  <img src="imgs/dos-c.png" class="img-fluid rounded-pill" alt="">
+                  <p class="">Lorem ipsum dolor sit</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <!--  End Do & Don't -->
+
+      <!-- Start FQ -->
+      <div class="fq mt-5 mb-5 pt-5 pb-5">
+        <div class="container text-center">
+          <div class="text mb-5">
+            <h5 class="text-uppercase text-primary">frequently asked questions</h5>
+            <h2 class="text-uppercase fw-bold">common question & answer</h2>
+          </div>
+          <div class="row mt-5 pt-5">
+            <div class="col-4">
+              <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Home</a>
+                <a class="list-group-item " id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>
+                <a class="list-group-item list-group-item-action" id="list-settings-five" data-bs-toggle="list" href="#list-five" role="tab" aria-controls="list-five">Settings</a>
+                <a class="list-group-item list-group-item-action" id="list-settings-six" data-bs-toggle="list" href="#list-six" role="tab" aria-controls="list-six">Settings</a>
+              </div>
+            </div>
+            <div class="col-8 pt-3">
+              <div class="tab-content " id="nav-tabContent">
+                
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                  <!--  -->
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header headingOne">
+                        <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target=".collapseOne" aria-expanded="true" aria-controls="collapseOne1">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="collapseOne1" class="accordion-collapse collapse show collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header headingTwo" >
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapseTwo" aria-expanded="false" aria-controls="collapseTwo1">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="collapseTwo1" class="accordion-collapse collapse collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapseThree" aria-expanded="false" aria-controls="collapseThree1">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="collapseThree1" class="accordion-collapse collapse collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapseFour" aria-expanded="false" aria-controls="collapseFour1">
+                          Accordion Item #4
+                        </button>
+                      </h2>
+                      <div id="collapseFour1" class="accordion-collapse collapse collapseFour" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                </div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target=".collapseOne" aria-expanded="true" aria-controls="collapseOne2">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="collapseOne2" class="accordion-collapse collapse show collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header headingTwo" >
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapseTwo" aria-expanded="false" aria-controls="collapseTwo2">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="collapseTwo2" class="accordion-collapse collapse collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapseThree" aria-expanded="false" aria-controls="collapseThree2">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="collapseThree2" class="accordion-collapse collapse collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapseFour" aria-expanded="false" aria-controls="collapseFour2">
+                          Accordion Item #4
+                        </button>
+                      </h2>
+                      <div id="collapseFour2" class="accordion-collapse collapse collapseFour" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target=".collapseOne" aria-expanded="true" aria-controls="collapseOne3">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="collapseOne3" class="accordion-collapse collapse show collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header headingTwo" >
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapseTwo" aria-expanded="false" aria-controls="collapseTwo3">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="collapseTwo3" class="accordion-collapse collapse collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapseThree" aria-expanded="false" aria-controls="collapseThree3">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="collapseThree3" class="accordion-collapse collapse collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapseFour" aria-expanded="false" aria-controls="collapseFour3">
+                          Accordion Item #4
+                        </button>
+                      </h2>
+                      <div id="collapseFour3" class="accordion-collapse collapse collapseFour" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target=".collapseOne" aria-expanded="true" aria-controls="collapseOne4">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="collapseOne4" class="accordion-collapse collapse show collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header headingTwo" >
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapseTwo" aria-expanded="false" aria-controls="collapseTwo4">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="collapseTwo4" class="accordion-collapse collapse collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapseThree" aria-expanded="false" aria-controls="collapseThree4">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="collapseThree4" class="accordion-collapse collapse collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapseFour" aria-expanded="false" aria-controls="collapseFour4">
+                          Accordion Item #4
+                        </button>
+                      </h2>
+                      <div id="collapseFour4" class="accordion-collapse collapse collapseFour" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="list-five" role="tabpanel" aria-labelledby="list-settings-five"> <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target=".collapseOne" aria-expanded="true" aria-controls="collapseOne5">
+                        Accordion Item #1
+                      </button>
+                    </h2>
+                    <div id="collapseOne5" class="accordion-collapse collapse show collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header headingTwo" >
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapseTwo" aria-expanded="false" aria-controls="collapseTwo5">
+                        Accordion Item #2
+                      </button>
+                    </h2>
+                    <div id="collapseTwo5" class="accordion-collapse collapse collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapseThree" aria-expanded="false" aria-controls="collapseThree5">
+                        Accordion Item #3
+                      </button>
+                    </h2>
+                    <div id="collapseThree5" class="accordion-collapse collapse collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapseFour" aria-expanded="false" aria-controls="collapseFour5">
+                        Accordion Item #4
+                      </button>
+                    </h2>
+                    <div id="collapseFour5" class="accordion-collapse collapse collapseFour" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                </div></div>
+                <div class="tab-pane fade" id="list-six" role="tabpanel" aria-labelledby="list-settings-six"> <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target=".collapseOne" aria-expanded="true" aria-controls="collapseOne6">
+                        Accordion Item #1
+                      </button>
+                    </h2>
+                    <div id="collapseOne6" class="accordion-collapse collapse show collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header headingTwo" >
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapseTwo" aria-expanded="false" aria-controls="collapseTwo6">
+                        Accordion Item #2
+                      </button>
+                    </h2>
+                    <div id="collapseTwo6" class="accordion-collapse collapse collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapseThree" aria-expanded="false" aria-controls="collapseThree6">
+                        Accordion Item #3
+                      </button>
+                    </h2>
+                    <div id="collapseThree6" class="accordion-collapse collapse collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".collapseFour" aria-expanded="false" aria-controls="collapseFour6">
+                        Accordion Item #4
+                      </button>
+                    </h2>
+                    <div id="collapseFour6" class="accordion-collapse collapse collapseFour" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                </div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End FQ -->
+
+      <!-- Start news -->
+      <div class="news mt-5 mb-5">
+        <div class="container text-center">
+          <div class="text mb-5">
+            <h5 class="text-uppercase text-primary">recent from blog</h5>
+            <h2 class="text-uppercase fw-bold">last update</h2>
+          </div>
+          <div class="row cards d-flex justify-content-center gap-3 ">
+            <div class="card col-lg-3 text-center p-3">
+              <img src="imgs/blog-a.jpg" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card col-lg-3 text-center p-3">
+              <img src="imgs/blog-b.jpg" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card col-lg-3 text-center p-3">
+              <img src="imgs/blog-c.jpg" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End news -->
+      <!-- Start Footer -->
+      <div class="footer pt-5 pb-5">
+        <div class="container " >
+          <div class="text pb-5  w-75">
+          <a class="navbar-brand img-fluid" href="#">C<img src="imgs/TitleIcon.png" alt="">VID19</a>
+            <p class=" text-white-50">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis veritatis
+               consequuntur id fuga sint dolorem ipsa culpa, dolorum fugiat est numquam esse
+                a temporibus in quia. Molestiae praesentium dolorem voluptatum.
+              </p>
+            <p class="text-white-50">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Placeat minus sapiente repudiandae. Error ab quam unde
+                veniam nobis ducimus laborum exercitationem, inventore
+            </p>
+          </div>
+          <div class="text pb-5 w-75 g-5 row d-flex justify-content-around">
+            <div class="col-lg-4">
+            <button class="btn  facebook text-capitalize text-white ps-4 pe-4 w-100 pt-2 pb-2  rounded-0 ">find us on facebook</button>
+            </div>
+            <div class="col-lg-4">
+            <button class="btn  twitter text-capitalize text-white ps-4 pe-4 w-100 pt-2 pb-2  rounded-0 ">find us on twitter</button>
+            </div>
+            <div class="col-lg-4">
+            <button class="btn  insta text-capitalize text-white ps-4 pe-4 w-100 pt-2 pb-2  rounded-0 ">find us on instagram</button>
+            </div>
+          </div>
+          <div class="row w-75 ">
+            <div class="col-lg-4 ">
+              <ul class="list-unstyled">
+                <li class="text-uppercase fw-bold text-white">quick link</li>
+                <li class="text-capitalize text-white-50">about corona</li>
+                <li class="text-capitalize text-white-50">about corona</li>
+                <li class="text-capitalize text-white-50">about corona</li>
+                <li class="text-capitalize text-white-50">about corona</li>
+                <li class="text-capitalize text-white-50">about corona</li>
+              </ul>
+            </div>
+            <div class="col-lg-4 ps-5">
+              <ul class="list-unstyled">
+                <li class="text-uppercase fw-bold text-white">quick link</li>
+                <li class="text-capitalize text-white-50">about corona</li>
+                <li class="text-capitalize text-white-50">about corona</li>
+                <li class="text-capitalize text-white-50">about corona</li>
+                <li class="text-capitalize text-white-50">about corona</li>
+                <li class="text-capitalize text-white-50">about corona</li>
+              </ul>
+            </div>
+            <div class="col-lg-4 ps-5">
+              <ul class="list-unstyled">
+                <li class="text-uppercase fw-bold text-white">quick link</li>
+                <li class="text-capitalize text-white-50">about corona</li>
+                <li class="text-capitalize text-white-50">about corona</li>
+                <li class="text-capitalize text-white-50">about corona</li>
+                <li class="text-capitalize text-white-50">about corona</li>
+                <li class="text-capitalize text-white-50">about corona</li>
+              </ul>
+            </div>
+          </div>
+          <hr class="text-white-50">
+          <div class="text">
+           <div class="row d-flex justify-content-between">
+            <div class="col-lg-8">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dolores dicta odit velit corrupti?
+                </p>
+            </div>
+            <div class="col-lg-2">
+              <p>privacy policy</p>
+            </div>
+           </div>
+           <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             Corrupti commodi, asperiores, excepturi, culpa quis vitae 
+             aliquam dolores fuga recusandae quos modi facere ducimus ipsa
+              perferendis ullam neque ratione esse voluptate?
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- End Footer -->
+      <!-- Start BackScroll button -->
+      <button type="button" class="btn btn-primary btn-floating btn-lg rounded-pill" id="btn-back-to-top" title="g">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+      <!-- End BackScroll button -->
+
+
+
+
+      <script src="js/all.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/covid.js"></script>
+</body>
+</html>

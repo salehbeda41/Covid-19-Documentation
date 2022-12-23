@@ -1,0 +1,558 @@
+/* Start global rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --main-bg:#f7f9fe;
+    --main-color: #50658e;
+    --secondary-color:#2a81ea;
+}
+body{
+    font-family: 'Festive', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    background-color: var(--main-bg);
+}
+
+/* End global rules */
+
+/* Start navbar */
+
+
+nav{
+    background-color: white;
+    height: 12vh;
+}
+
+nav .navbar-brand {
+    font-size: 25px;
+    font-weight: 900;
+    color: var(--main-color)
+}
+nav .navbar-brand img{
+    height: 25px;
+}
+nav .navbar-brand:hover{
+    color: var(--main-color);
+}
+.navbar .navbar-toggler{ 
+    color: var(--main-color);
+    font-size: 25px;
+    border-color: var(--main-color);
+}
+nav .navbar-collapse .close-icon{
+    display: none;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"]{
+    border: 2px solid var(--main-color);
+}
+nav .navbar-nav .nav-item a{
+    color: var(--main-color);
+    font-size: 1em;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border: 2px solid var(--main-color);
+}
+
+@media (max-width:990px){
+    
+    nav .container{
+        padding: 0% !important;
+    }
+    nav .navbar-collapse{
+        background-color: #2a80eab5;
+        font-weight: 900;
+        width: 100vw !important;
+        height: 100vh;
+        z-index: 0;
+        margin-right: 0%;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transition: 1s ease-in-out;
+        
+    }
+    nav .collapse-parent{
+        padding-top: 40px;
+        background-color: white !important;
+        color: white;
+        width: 40vw;
+        height: 100vh;
+        padding-left: 30px;
+        z-index:1 ;
+        position: absolute;
+        top:0%;
+        left: 0%;
+    }
+    nav .navbar-collapse .home-link{
+        padding-left:20px;
+    }
+    nav .navbar-collapse .btn{
+        position: absolute;
+        left: 0%;
+    } 
+    nav .navbar-toggler[aria-expanded="true"]{
+        display: none;
+    }
+    nav .navbar-collapse .close-icon{
+        display: none;
+        position: absolute;
+        top: 4%;
+        right: 10%;
+        font-size: 50px;
+        z-index: 1;
+        
+    }
+    nav .navbar-collapse .close-icon svg{
+        background-color: #2a80eab5;
+        color: white;
+        border-radius: 50%;
+    }
+
+    nav .navbar-collapse .close-icon svg:hover{
+        color: #151c2ea6;
+        transition: .25s;
+    }
+}
+
+/* End navbar */
+
+/* Start Header */
+.header{
+    background-image: url(/imgs/shape-a.png);
+}
+
+.header .heading h1{
+    color:  var(--main-color);
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 25px;
+}
+
+.header .heading p{
+    line-height: 15px;
+    text-align: start;
+}
+.header .heading p .covid{
+    color: red;
+    font-size: 30px;
+    font-weight: 600;
+}
+.header .heading p .virus{
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.header .header-content .info .col1{
+    color: var(--main-color);
+    text-align: start;
+}
+.header .header-content .info .col1 p{
+    font-size: 15px;
+}
+
+.header .text{
+    color: var(--main-color);
+}
+@media (max-width:767px){
+    .header .heading h1{
+        font-size: 20px;
+    }
+    .header .heading p{
+        line-height: 5px;
+    }
+    .header .heading p .covid{
+        font-size: 20px;
+    }
+    .header .heading p .virus{
+        font-size: 20px;
+    }
+    .header .header-content .buttons a{
+        margin-bottom: 10px;
+    }
+    .header .header-content .info .col1{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .header .row{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+/* End Header */
+
+/* Start About */
+.about{
+    background-color: white;
+}
+
+.about .text h6{
+    color: var(--secondary-color);
+}
+.about .text h1,p{
+    color: var(--main-color);
+}
+.about .text p span{
+    font-weight: 700;
+}
+.about table th{
+    color: var(--main-color);
+}
+.about table a{
+    background-color: white !important;
+    border: none !important;
+}
+/* End About */
+
+/* Start disease */
+
+
+.disease h5{
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+.disease h1{
+    color: var(--main-color);
+    font-weight: 900;
+}
+.disease p{
+    color: var(--main-color);
+}
+.disease .cards .card .card-title{
+    color: var(--secondary-color);
+}
+.disease .cards .card .line{
+    height: 4px;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+/* End disease */
+/* Start symptoms */
+
+.symptoms h5{
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+.symptoms h1{
+    color: var(--main-color);
+    font-weight: 900;
+}
+.symptoms p{
+    color: var(--main-color);
+}
+
+.symptoms .cards .card img{
+    width: 30%;
+    top: -15%;
+    left: 70%;
+    border: none !important;
+}
+.symptoms .cards .card .card-text span{
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.755);
+}
+.symptoms .alert .text svg{
+    height: 50px;
+    color: var(--secondary-color);
+}
+.symptoms .alert .text p span{
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+@media (max-width:767px){
+    .symptoms .cards{
+        margin-bottom: 1    00px;
+    }
+    .symptoms .cards .card{
+        margin-bottom: 90px;
+    }
+}
+
+/* End symptoms */
+
+
+/* Start steps */
+.steps h2{
+    color: #193365;
+    font-weight: 800;
+}
+
+.steps p{
+    color: #193365;
+}
+.steps p svg{
+    color: #32c78c;
+}
+.steps p span{
+    font-weight: 600;
+}
+/* End steps */
+
+/* Start follow */
+.follow h3{
+    color: var(--main-color)
+}
+
+@media (max-width:990px) {
+.follow .row{
+    text-align: center;
+}
+
+    
+}
+/* End follow */
+
+/* Start treatment */
+.treatment{
+        /* background-color: var(--secondary-color);
+        background-image: url(/imgs/shape-a.png) ; */
+    background: 75% var(--secondary-color) url(/imgs/shape-a.png);
+}
+
+.treatment .box{
+    background-color: #1b47a1;
+}
+
+.treatment .box p{
+    color: white;
+}
+
+.treatment .col-lg-7 h5{
+    color: #5be8ff;
+}
+
+@media (max-width:990px){
+    .treatment{
+        padding-bottom: 0% !important;
+    }
+}
+/* End treatment */
+
+/* Start Do & Don't */
+.do h2{
+    color: var(--main-color);
+}
+.do .big-box:first-of-type{
+    text-align: end;
+}
+.do .big-box:last-of-type{
+    text-align: start;
+}
+.do .protect{
+    text-align: center;
+    margin: auto;
+    
+}
+.do .big-box:first-of-type img{
+    border: 2px solid red;
+    z-index: -1;
+
+}
+
+.do .big-box:last-of-type img{
+    border: 2px solid green;
+    z-index: -1;
+  
+}
+
+.do .big-box:first-of-type svg{
+    margin-left: 5px;
+    padding: 5px;
+    font-size: 13px;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.832);
+    border-radius: 100%;
+    position: absolute;
+    z-index: 0;
+    right: 20%;
+    top: 0%;
+    
+}
+.do .big-box:last-of-type svg{
+    margin-left: 5px;
+    padding: 5px;
+    font-size: 13px;
+    color: white;
+    background-color:rgba(0, 128, 0, 0.753) ;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 0;
+    left: 18%;
+    top: 0%;
+    
+}
+
+.do .image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+.do .image img{
+    margin: 0px 10px 0px 10px;
+    width: 25%;
+}
+
+@media (max-width:990px){
+    .do .protect{
+        padding-top: 70px !important;
+        margin-bottom: 70px !important;
+    }
+    .do .big-box{
+        text-align: center;
+    }
+}
+
+
+/* End Do & Don't */
+
+/* Start FQ */
+
+.fq{
+    background-color: white;
+}
+.fq .list-group .list-group-item:focus{
+    background-color: white ;
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    border-width: 2px;
+}
+.fq .list-group .list-group-item.active{
+    background-color: white ;
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.fq .list-group .list-group-item::after{
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 8px;
+    border-color: transparent transparent transparent var(--main-color);
+    right: 2%;
+    top: 30%;
+}
+
+.fq .list-group .list-group-item{
+    padding-top: 12px;
+    margin-top: 10px;
+    height: 50px;
+    text-align: start;
+    font-weight: 600;
+    color: var(--main-color);
+
+}
+
+.fq .accordion .accordion-item .accordion-header button{
+    background-color: var(--main-bg) ;
+    color: var(--main-color);
+    font-weight: 900;
+    --bs-accordion-btn-icon: none;
+
+}
+
+.fq .accordion .accordion-item .accordion-header button:focus{
+    background-color: white;
+    box-shadow: none;
+    --bs-accordion-btn-active-icon: none;
+    --bs-accordion-btn-icon-width: none;
+}
+
+.fq .accordion .accordion-item .accordion-header button::after{
+    content: "+";
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10%;
+    --bs-accordion-btn-icon: none;
+    --bs-accordion-btn-icon-transform: rotate(0deg);
+}
+.fq .accordion .accordion-item .accordion-header button[aria-expanded="true"]::after{
+    content: "-";
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10%;
+    --bs-accordion-btn-icon: none;
+}
+.fq .accordion .accordion-item .accordion-header .accordion-collapse:focus::after{
+    content: "-";
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10%;
+    --bs-accordion-btn-icon: none;
+}
+
+.fq .accordion .accordion-item .accordion-header button[aria-expanded="false"]::after{
+    --bs-accordion-btn-icon: none;
+
+}
+
+
+
+
+
+
+
+/* End FQ */
+
+
+/* Start Footer */
+.footer{
+    background-color: #151c2e;
+    background-image: url(/imgs/shape-a.png);
+}
+.footer .navbar-brand img{
+    height: 25px;
+}
+.footer .navbar-brand {
+    font-size: 25px;
+    font-weight: 900;
+    color: var(--main-color)
+}
+.footer .facebook{
+    background-color: #3b5999;
+}
+.footer .twitter{
+    background-color: #55acee;
+}
+.footer .insta{
+    background-color: #e4405f;
+}
+/* End Footer */
+
+
+/* Start BacktoStart */
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+  }
+
+  .iconn{
+    font-size: 50px !important;
+    font-weight: 900 !important;
+  }
+
+/* End BacktoStart */
