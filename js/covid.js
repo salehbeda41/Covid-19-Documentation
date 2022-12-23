@@ -49,5 +49,3 @@ function closeAria(){
 
 }
 
-
-let x=["home","about" ]
