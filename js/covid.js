@@ -48,3 +48,6 @@ function closeAria(){
   closeButton.style.display="none";
 
 }
+
+
+let x=["home","about" ]

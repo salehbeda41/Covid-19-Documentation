@@ -283,9 +283,9 @@ nav .navbar-nav .nav-item a{
     font-weight: bold;
 }
 
-@media (max-width:767px){
+@media (max-width:990px){
     .symptoms .cards{
-        margin-bottom: 1    00px;
+        margin-bottom: 100px;
     }
     .symptoms .cards .card{
         margin-bottom: 90px;
@@ -294,7 +294,18 @@ nav .navbar-nav .nav-item a{
 
 /* End symptoms */
 
+/* Start Prevention */
+.prevention{
+    color: black;
+}
 
+.prevention h1{
+    color: #151c2e;
+}
+.prevention h5{
+    color: var(--secondary-color);
+}
+/* End Prevention */
 /* Start steps */
 .steps h2{
     color: #193365;
@@ -310,6 +321,7 @@ nav .navbar-nav .nav-item a{
 .steps p span{
     font-weight: 600;
 }
+
 /* End steps */
 
 /* Start follow */
@@ -320,6 +332,12 @@ nav .navbar-nav .nav-item a{
 @media (max-width:990px) {
 .follow .row{
     text-align: center;
+    
+}
+
+.follow .text{
+    text-align: center;
+    margin: auto;
 }
 
     
@@ -425,6 +443,7 @@ nav .navbar-nav .nav-item a{
     }
     .do .big-box{
         text-align: center;
+        margin: auto
     }
 }
 
