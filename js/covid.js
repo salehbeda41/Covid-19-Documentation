@@ -31,22 +31,14 @@ function backToTop() {
 let closeButton=document.querySelector(".close-icon");
 let navbarToggler=document.querySelector(".navbar-toggler")
 let aria=document.querySelector(".collapse")
-let x=navbarToggler.getAttribute("aria-expanded")
 let colLapse =document.querySelector(".navbar-collapse");
-// console.log(x);
-// if(navbarToggler.getAttribute("aria-expanded")==true){
-//   closeButton.style.display="block";
-//   console.log("block");
-// }
 
 function closeIcon() {
   let y= navbarToggler.getAttribute("aria-expanded")
   if(y=="true"){
     closeButton.style.display="block";
-    console.log("inline");
   }
-  console.log("hi from js");
-  console.log(y);
+
 }
 
 function closeAria(){

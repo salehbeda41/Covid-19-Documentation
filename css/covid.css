@@ -92,11 +92,16 @@ nav .navbar-nav .nav-item a{
         color: white;
         width: 40vw;
         height: 100vh;
-        padding-left: 30px;
         z-index:1 ;
         position: absolute;
         top:0%;
         left: 0%;
+    }
+    nav .collapse-parent ul{
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        width: 100%;
     }
     nav .navbar-collapse .home-link{
         padding-left:20px;
@@ -217,6 +222,8 @@ nav .navbar-nav .nav-item a{
     background-color: white !important;
     border: none !important;
 }
+
+
 /* End About */
 
 /* Start disease */
